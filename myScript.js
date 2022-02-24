@@ -1,10 +1,9 @@
-const personal { 
-const form = document.getElementById('form'), 
-const username = document.getElementById('username'), 
-const email = document.getElementById('email'), 
-const password = document.getElementById('password'), 
-const password2 = document.getElementById('password2'), 
-}
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const password2 = document.getElementById('password2');
+
 
 //show input error message
 
@@ -129,3 +128,21 @@ $(document).ready(function(){
     });
   });
 });
+
+//mimh
+function openCity(cityName,elmnt,color) { 
+  var i, tabcontent, tablinks; 
+  tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) { 
+    tabcontent[i].style.display = "none"; 
+  } 
+  tablinks = document.getElementsByClassName("tablink"); 
+  for (i = 0; i < tablinks.length; i++) { 
+    tablinks[i].style.backgroundColor = ""; 
+  } 
+  document.getElementById(cityName).style.display = "block"; 
+  elmnt.style.backgroundColor = color; 
+ 
+} 
+// Get the element with id="defaultOpen" and click on it 
+document.getElementById("defaultOpen").click(); 
